@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  .version_group
+    #requested.version
+      p You requested Node Version #{requestedNodeVersion}
+    #actual.version
+      p You are using Node Version #{actualNodeVersion}
+  if versionsMatch
+    p 
+      strong.blink_me IT MATCHES!
+    p
+      video.gifs(preload="auto" autoplay="autoplay" loop="loop" style="width: 680px; height: 350.476px;")
+        source(src="http://i.imgur.com/iXVUrEz.webm" type="video/webm")

@@ -1,0 +1,44 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.version_group {
+  display: flex;
+  width: 600px;
+  border: 3px solid rgb(0, 114, 198);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.version{
+  padding: 10px;
+  flex: 1 1 auto;
+  
+  border: none;
+  border-radius: 0;
+}
+
+.version + .version {
+  border-left: 1px solid rgb(0, 188, 242);
+}
+
+.gifs {
+  border: 3px solid rgb(0, 114, 198);
+  border-radius: 5px;
+}
+
+
+/* From - http://stackoverflow.com/questions/16344354/how-to-make-blinking-flashing-text-with-css3 */
+.blink_me {
+  font-size: 20px;
+  animation: blinker .25s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0.0; }
+}
